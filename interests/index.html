@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schreibanimation mit Video-Hintergrund</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+    <div class="zoom-overlay", id="zoomOverlay">
+        <p class="zoom-message", id="zoomOverlay">This page is disigned for a zoom of 100% or lower!
+    </div>
+
+    <!--info box-->
+    <div class="container">
+        
+        <a href="https://ufomc.de/">
+            <button class="button">  <img src="media/home.png" alt="home" style="width: 50px"></button>
+        </a>
+        
+
+        <div class="hobby">
+
+            <div class="video-container">
+                <video id="backgroundVideo" class="video-bg" autoplay muted loop></video>
+            </div>
+        
+            <div class="text-container">
+                <h1><div class="animated-text" id="animatedText"></div></h1>
+            </div>
+
+            <div class="text-container">
+                <div class="dynamic-discription" id="discription"></div>
+            </div>
+            
+            <div>
+                <button id="nextVid" class="button">next</button>
+            </div>
+            
+
+        </div>
+
+    </div>
+
+    
+    <!--scripts-->
+    <script src="script.js"></script>
+    <script src="resize.js"></script>
+
+</body>
+</html>
